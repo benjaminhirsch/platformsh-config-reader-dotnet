@@ -4,6 +4,10 @@
         <PackageId>benjaminhirsch.platformsh-config-reader</PackageId>
         <Version>1.0.0</Version>
         <Authors>Benjamin Hirsch</Authors>
+        <Description>This library provides a streamlined and easy to use way to interact with a Platform.sh environment.</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/benjaminhirsch/platformsh-config-reader-dotnet</RepositoryUrl>
+        <PackageTags>paltformsh, platform.sh, environment</PackageTags>
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
