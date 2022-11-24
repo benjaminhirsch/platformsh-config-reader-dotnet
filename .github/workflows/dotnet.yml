@@ -26,4 +26,4 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore --framework net${{ matrix.dotnet-version }} 
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal --framework net${{ matrix.dotnet-version }}
