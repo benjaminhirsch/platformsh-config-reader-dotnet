@@ -25,5 +25,7 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --configuration Release --no-restore
+      with:
+        dotnet-version: ${{ matrix.version }}
     - name: Test
       run: dotnet test --no-build --verbosity normal
