@@ -23,6 +23,6 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release --no-restore --framework net${{ matrix.dotnet-version }} -o ${{env.DOTNET_ROOT}}
       - name: Publish the package to nuget.org
-        run: dotnet nuget push ${{env.DOTNET_ROOT}}/**/*.nupkg -k $NUGET_AUTH_TOKEN -s https://api.nuget.org/v3/index.json
+        run: dotnet nuget push ${{env.DOTNET_ROOT}}/bin/Release/*.nupkg -k $NUGET_AUTH_TOKEN -s https://api.nuget.org/v3/index.json
         env:
           NUGET_AUTH_TOKEN: ${{ secrets.NUGET_TOKEN }}
